@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Analysis | JeevSathi</title>
+    <link rel="stylesheet" href="./css/anaysis.css">
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="brand">🐾 JeevSathi</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="report.html">Report</a>
+            <a href="rescuers.html">Rescuers</a>
+            <a href="adoption.html">Adoption</a>
+        </nav>
+
+        <a href="dashboard.html" class="user-profile">
+            <span class="avatar">👤</span>
+            <span>User</span>
+            <span>⌄</span>
+        </a>
+    </header>
+
+    <div class="layout">
+
+        <!-- Same Sidebar -->
+        <aside class="sidebar">
+            <p class="menu-title">MAIN MENU</p>
+
+            <a href="dashboard.html" class="side-link">
+                <span>▦</span> Dashboard
+            </a>
+
+            <a href="#" class="side-link">
+                <span>📄</span> My Reports
+            </a>
+
+            <a href="#" class="side-link">
+                <span>📍</span> Rescue Tracking
+            </a>
+
+            <a href="#" class="side-link">
+                <span>♥</span> Adoption
+            </a>
+
+            <a href="#" class="side-link">
+                <span>👤</span> Profile
+            </a>
+
+            <div class="sidebar-help">
+                <div class="help-paw">🐾</div>
+                <h3>Be their voice.</h3>
+                <p>Your small action can save a precious life.</p>
+            </div>
+
+            <a href="index.html" class="side-link logout">
+                <span>↪</span> Logout
+            </a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <div class="breadcrumb">
+                <a href="dashboard.html">Dashboard</a>
+                <span>/</span>
+                <a href="report.html">Report Animal</a>
+                <span>/</span>
+                <strong>AI Analysis</strong>
+            </div>
+
+            <section class="page-heading">
+                <div>
+                    <span class="eyebrow">SMART ANIMAL RESCUE</span>
+                    <h1>AI Analysis Result <span>✦</span></h1>
+                    <p>Understand the animal's condition and find the next step.</p>
+                </div>
+                <div class="ai-badge">✦ AI ASSISTANT</div>
+            </section>
+
+
+
+            <section class="results-grid">
+
+                <!-- Animal Photo -->
+                <article class="panel animal-panel">
+                    <div class="panel-heading">
+                        <h2>🐾 Reported Animal</h2>
+                        <span class="photo-tag">PHOTO</span>
+                    </div>
+
+                    <div class="animal-photo" id="animalPhoto">
+                        <div class="photo-placeholder" id="photoPlaceholder">
+                            <span>🐕</span>
+                            <p>Animal photo preview</p>
+                            <small>Upload a photo on the Report page</small>
+                        </div>
+                    </div>
+
+                    <div class="animal-info">
+                        <div>
+                            <span class="info-label">ANIMAL TYPE</span>
+                            <h3 id="animalType">Dog</h3>
+                        </div>
+                        <div>
+                            <span class="info-label">REPORTED CONDITION</span>
+                            <h3 id="animalCondition">Injured</h3>
+                        </div>
+                    </div>
+
+                    <div class="location-box">
+                        <span>📍</span>
+                        <div>
+                            <span class="info-label">REPORTED LOCATION</span>
+                            <p id="animalLocation">Dehradun, Uttarakhand</p>
+                        </div>
+                    </div>
+
+                    <a href="report.html" class="edit-link">← Back to Report</a>
+                </article>
+
+                <!-- AI Analysis -->
+                <article class="panel analysis-panel">
+                    <div class="panel-heading">
+                        <h2>✦ Analysis Summary</h2>
+                        <span class="demo-tag">DEMO</span>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-icon purple">✦</div>
+                        <div class="result-text">
+                            <span class="info-label">DETECTED ANIMAL</span>
+                            <h3 id="detectedAnimal">Dog</h3>
+                            <p>Sample classification for demonstration</p>
+                        </div>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-icon orange">⚕</div>
+                        <div class="result-text">
+                            <span class="info-label">CONDITION</span>
+                            <h3 id="detectedCondition">Possible injury</h3>
+                            <p>Needs an in-person assessment by a rescuer or veterinarian.</p>
+                        </div>
+                    </div>
+
+                    <div class="urgency-box">
+                        <div class="urgency-heading">
+                            <div>
+                                <span class="info-label">SUGGESTED PRIORITY</span>
+                                <h3 id="urgencyTitle">High Priority</h3>
+                            </div>
+                            <span class="urgency-icon">!</span>
+                        </div>
+
+                        <div class="priority-track">
+                            <span class="priority-fill" id="priorityFill"></span>
+                        </div>
+
+                        <p id="urgencyDescription">
+                            If the animal has severe bleeding, trouble breathing, or cannot move, contact an emergency veterinarian or local rescue service immediately.
+                        </p>
+                    </div>
+
+                    <div class="recommendation">
+                        <h3>✓ Recommended Next Steps</h3>
+                        <ul id="recommendationList">
+                            <li>Keep a safe distance from the animal.</li>
+                            <li>Contact a nearby animal rescuer or veterinarian.</li>
+                            <li>Share the exact location for quicker assistance.</li>
+                        </ul>
+                    </div>
+
+                    <a href="rescuers.html" class="primary-button">
+                        Find Nearby Rescuers <span>→</span>
+                    </a>
+
+                    <p class="disclaimer">
+                        This demo does not diagnose medical conditions. Follow professional veterinary advice.
+                    </p>
+                </article>
+
+            </section>
+
+            <div class="bottom-actions">
+                <a href="dashboard.html" class="secondary-button">← Back to Dashboard</a>
+                <a href="report.html" class="secondary-button">+ New Report</a>
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            🐾 JeevSathi
+        </div>
+
+        <p>
+            Helping injured and stray animals find care, safety and a loving home.
+        </p>
+
+        <span>
+            © 2026 JeevSathi. All Rights Reserved.
+        </span>
+
+    </footer>
+
+    <script>
+        /*
+                                          This page currently displays demo results.
+                                          Actual AI predictions will be connected through Spring Boot later.
+                                        */
+
+        const params = new URLSearchParams(window.location.search);
+
+        const animal = params.get("animal");
+        const condition = params.get("condition");
+        const location = params.get("location");
+
+        if (animal) {
+            document.getElementById("animalType").textContent = animal;
+            document.getElementById("detectedAnimal").textContent = animal;
+        }
+
+        if (condition) {
+            document.getElementById("animalCondition").textContent = condition;
+            document.getElementById("detectedCondition").textContent = condition;
+        }
+
+        if (location) {
+            document.getElementById("animalLocation").textContent = location;
+        }
+
+        const priorities = {
+            "injured": {
+                title: "High Priority",
+                width: "90%",
+                color: "#dc5b4e",
+                description: "An injury may need urgent professional assessment. If there is severe bleeding, trouble breathing, or inability to move, contact emergency veterinary help immediately."
+            },
+            "accident": {
+                title: "High Priority",
+                width: "90%",
+                color: "#dc5b4e",
+                description: "An animal involved in an accident may have hidden injuries. Contact a rescuer or veterinarian urgently and avoid moving the animal unless necessary for immediate safety."
+            },
+            "sick": {
+                title: "Medium Priority",
+                width: "60%",
+                color: "#e5a12a",
+                description: "The animal should be assessed by a veterinarian. If its condition worsens or it has trouble breathing, seek emergency help."
+            },
+            "abandoned": {
+                title: "Needs Assistance",
+                width: "55%",
+                color: "#e5a12a",
+                description: "Check from a safe distance whether the animal needs immediate help. Contact a local rescue organisation for assessment."
+            },
+            "trapped": {
+                title: "Needs Assistance",
+                width: "75%",
+                color: "#e5a12a",
+                description: "Do not put yourself in danger attempting a rescue. Contact trained rescuers and provide the animal's location."
+            }
+        };
+
+        const selectedPriority = priorities[(condition || "injured").toLowerCase()] || {
+            title: "Assessment Needed",
+            width: "50%",
+            color: "#e5a12a",
+            description: "A rescuer or veterinarian should assess the animal and decide how quickly assistance is needed."
+        };
+
+        document.getElementById("urgencyTitle").textContent = selectedPriority.title;
+        document.getElementById("priorityFill").style.width = selectedPriority.width;
+        document.getElementById("priorityFill").style.background = selectedPriority.color;
+        document.getElementById("urgencyDescription").textContent = selectedPriority.description;
+    </script>
+
+</body>
+
+</html>

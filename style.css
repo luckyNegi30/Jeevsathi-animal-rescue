@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 70px;
+    background: #075b46;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 12px 4%;
+    color: white;
+}
+
+.brand {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    white-space: nowrap;
+}
+
+
+/* Green part of logo */
+
+.logo span {
+    color: white;
+}
+
+
+/* Navigation */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #168a3b;
+}
+
+
+/* Login + Sign Up */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Login */
+
+.login-btn {
+    text-decoration: none;
+    color: #222;
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 9px 17px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+
+/* Sign Up */
+
+.signup-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #168a3b;
+    border: 1px solid #168a3b;
+    padding: 9px 17px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.signup-btn:hover {
+    background-color: #116d2f;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 500px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 55px;
+}
+
+
+/* Left */
+
+.hero-content {
+    width: 48%;
+}
+
+.hero-content h1 {
+    font-size: 53px;
+    line-height: 1.1;
+    color: #111;
+    margin-bottom: 22px;
+}
+
+.hero-content h1 span {
+    color: #168a3b;
+}
+
+.hero-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 500px;
+    margin-bottom: 28px;
+}
+
+
+/* ================= HERO BUTTONS ================= */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.report-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #168a3b;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.report-btn:hover {
+    background-color: #116d2f;
+}
+
+.adopt-btn {
+    text-decoration: none;
+    color: #168a3b;
+    background-color: white;
+    border: 1px solid #168a3b;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.adopt-btn:hover {
+    background-color: #f0f8f2;
+}
+
+
+/* ================= HERO IMAGE ================= */
+
+.hero-image {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 600px;
+    max-width: none;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+/* ================= STATISTICS ================= */
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 38px 70px;
+    background-color: white;
+    border-top: 1px solid #eeeeee;
+}
+
+.stat-box {
+    text-align: center;
+    min-width: 200px;
+}
+
+.stat-box h2 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.stat-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #123c2a;
+    color: white;
+    padding: 40px 55px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-section a {
+    display: block;
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+.footer-section a:hover {
+    color: #4caf50;
+}
+
+
+/* Bottom Footer */
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 18px;
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 0 20px;
+    }
+    .nav-links {
+        gap: 12px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        width: 100%;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .hero-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .stats {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-section {
+        width: 100%;
+    }
+}

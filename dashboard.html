@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - JeevSathi</title>
+
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🐾 <span>JeevSathi</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="report.html">Report</a>
+            <a href="#">Rescuers</a>
+            <a href="#">Adoption</a>
+            <a href="#">About Us</a>
+        </nav>
+
+        <div class="user-area">
+            <span class="notification">🔔</span>
+            <span class="profile-icon">👤</span>
+            <span class="username">User</span>
+            <span>⌄</span>
+        </div>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <div class="dashboard-container">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <a href="dashboard.html" class="side-link active">
+                🏠
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="side-link">
+                📄
+                <span>My Reports</span>
+            </a>
+
+            <a href="#" class="side-link">
+                📍
+                <span>Rescue Tracking</span>
+            </a>
+
+            <a href="#" class="side-link">
+                ❤️
+                <span>Adoption</span>
+            </a>
+
+            <a href="#" class="side-link">
+                👤
+                <span>Profile</span>
+            </a>
+
+            <a href="index.html" class="side-link">
+                🚪
+                <span>Logout</span>
+            </a>
+
+
+            <div class="sidebar-message">
+                🐾
+
+                <p>
+                    Small steps
+                    <br> make a big difference
+                </p>
+
+                <span>♥</span>
+            </div>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="main-content">
+
+
+            <!-- Welcome -->
+
+            <section class="welcome">
+
+                <h1>
+                    Welcome Back! 🐾
+                </h1>
+
+                <p>
+                    Together we can make a safer and kinder world for animals.
+                </p>
+
+            </section>
+
+
+            <!-- ================= STAT CARDS ================= -->
+
+            <section class="stats">
+
+
+                <div class="stat-card green-card">
+
+                    <div class="card-icon">
+                        📄
+                    </div>
+
+                    <h2>5</h2>
+
+                    <p>Total Reports</p>
+
+                    <span class="arrow">→</span>
+
+                </div>
+
+
+                <div class="stat-card green-card">
+
+                    <div class="card-icon">
+                        🐾
+                    </div>
+
+                    <h2>3</h2>
+
+                    <p>Rescued Animals</p>
+
+                    <span class="arrow">→</span>
+
+                </div>
+
+
+                <div class="stat-card yellow-card">
+
+                    <div class="card-icon">
+                        🕐
+                    </div>
+
+                    <h2>2</h2>
+
+                    <p>Pending Reports</p>
+
+                    <span class="arrow">→</span>
+
+                </div>
+
+
+                <div class="stat-card blue-card">
+
+                    <div class="card-icon">
+                        ❤️
+                    </div>
+
+                    <h2>1</h2>
+
+                    <p>Adoption Requests</p>
+
+                    <span class="arrow">→</span>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= REPORTS + QUICK ACTIONS ================= -->
+
+            <div class="content-row">
+
+
+                <!-- MY REPORTS -->
+
+                <section class="reports-section">
+
+                    <div class="section-heading">
+
+                        <h2>
+                            📄 My Reports
+                        </h2>
+
+                        <a href="#">
+                            View All →
+                        </a>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Animal</th>
+                                    <th>Type</th>
+                                    <th>Condition</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        <span class="animal-emoji">🐕</span>
+                                    </td>
+
+                                    <td>Dog</td>
+
+                                    <td>Injured</td>
+
+                                    <td>Dehradun</td>
+
+                                    <td>
+                                        <span class="status rescued">
+                                            Rescuer Assigned
+                                        </span>
+                                    </td>
+
+                                    <td>12 Sep 2026</td>
+
+                                    <td>→</td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <span class="animal-emoji">🐈</span>
+                                    </td>
+
+                                    <td>Cat</td>
+
+                                    <td>Sick</td>
+
+                                    <td>Dehradun</td>
+
+                                    <td>
+                                        <span class="status review">
+                                            Under Review
+                                        </span>
+                                    </td>
+
+                                    <td>10 Sep 2026</td>
+
+                                    <td>→</td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <span class="animal-emoji">🐄</span>
+                                    </td>
+
+                                    <td>Cow</td>
+
+                                    <td>Accident</td>
+
+                                    <td>Dehradun</td>
+
+                                    <td>
+                                        <span class="status rescued">
+                                            Rescued
+                                        </span>
+                                    </td>
+
+                                    <td>05 Sep 2026</td>
+
+                                    <td>→</td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <span class="animal-emoji">🐦</span>
+                                    </td>
+
+                                    <td>Bird</td>
+
+                                    <td>Injured</td>
+
+                                    <td>Dehradun</td>
+
+                                    <td>
+                                        <span class="status pending">
+                                            Pending
+                                        </span>
+                                    </td>
+
+                                    <td>02 Sep 2026</td>
+
+                                    <td>→</td>
+
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <a href="report.html" class="report-new-btn">
+                        + &nbsp; Report New Animal
+                    </a>
+
+                </section>
+
+
+                <!-- ================= RIGHT SIDE ================= -->
+
+                <aside class="right-panel">
+
+
+                    <!-- Quick Actions -->
+
+                    <div class="quick-actions">
+
+                        <h2>
+                            ⚡ Quick Actions
+                        </h2>
+
+
+                        <a href="report.html" class="action-btn">
+                            🐾
+                            <span>Report an Animal</span>
+                            <b>→</b>
+                        </a>
+
+
+                        <a href="#" class="action-btn">
+                            📍
+                            <span>Find Nearby Rescuers</span>
+                            <b>→</b>
+                        </a>
+
+
+                        <a href="#" class="action-btn">
+                            ❤️
+                            <span>Adopt a Pet</span>
+                            <b>→</b>
+                        </a>
+
+
+                        <a href="#" class="action-btn">
+                            🗺️
+                            <span>View Rescue Map</span>
+                            <b>→</b>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Animal Card -->
+
+                    <div class="animal-card">
+
+                        <div class="animal-picture">
+                            🐕 🐈
+                        </div>
+
+                        <h2>
+                            Every life matters ♥
+                        </h2>
+
+                        <p>
+                            Report &nbsp; • &nbsp; Rescue &nbsp; • &nbsp; Adopt
+                        </p>
+
+                        <div class="animal-decoration">
+                            🌿 ─── 🐾 ─── 🌿
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            🐾 JeevSathi
+        </div>
+
+        <p>
+            Helping injured and stray animals find care, safety and a loving home.
+        </p>
+
+        <span>
+            © 2026 JeevSathi. All Rights Reserved.
+        </span>
+
+    </footer>
+
+
+</body>
+
+</html>
